@@ -1,0 +1,119 @@
+button{
+ margin: 0;
+ padding: 0;
+ border: 0;
+ border-radius: 0;
+ background-color: transparent;
+}
+body{
+ background-image: url(../img/bg.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.container{
+ background-color: #eee8f6;
+ background-color: rgba(255, 255, 255, 0.3);
+ min-height: 90vh;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+ padding-bottom: 2rem;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ max-width: 800px;
+}
+.container>h1{
+  text-align: center;
+  padding-top: 1rem;
+}
+.container>h1>span{
+ display: inline-block;
+ width: 30px;
+ height: 30px;
+ background-image: url(../img/iconmonstr-pencil-filled-48.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin-right: 1%;
+}
+/* 인풋영역 */
+.input_area{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.text_input{
+  padding: 0.5rem;
+  width: 70%;
+  height: 100%;
+}
+.add_btn{
+  text-align: right;
+}
+#task_menu{
+  background-color: #eee8f6;
+}
+/* 탭 영역 */
+.task_tabs{
+ display: flex;
+ position: relative;
+ padding: 0;
+ box-sizing: border-box;
+}
+.task_tabs>div{
+ padding: 1rem;
+ cursor: pointer;
+}
+
+/* 탭 언더라인 */
+#under_line{
+ width: 48px;
+ height: 4px !important;
+ background-color: #B78FCE;
+ position: absolute;
+ left: 0; top: 53px;
+ transition: 0.5s;
+ padding: 0;
+}
+
+/* 목록 작성 */
+.task{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #B78FCE;
+}
+.task_done_wrap{
+  background-color:#e4e4e4;
+}
+.task_done{
+  text-decoration: line-through;
+  
+}
+.check_btn{
+  width: 30px;
+  height: 30px;
+}
+.check_btn>img{
+  width: 90%;
+}
+.delete_btn{
+  width: 30px;
+  height: 30px;
+  text-align: right;
+}
+.delete_btn>img{
+  width: 90%;
+}
+
+
+@media (max-width:800px) {
+  body{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media (max-width:580px) {
+  .container>h1>span{
+   width: 1.5rem;
+   height: 1.5rem;
+  }
+}
